@@ -1,6 +1,6 @@
 //require packages
 var express = require("express");
-var logger = require("morgan");
+//var logger = require("morgan");
 var mongoose = require("mongoose");
 
 
@@ -11,7 +11,7 @@ var app = express();
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
-app.use(logger("dev"));
+//app.use(logger("dev"));
 // Parse application body as JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
