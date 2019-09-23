@@ -16,5 +16,10 @@
         app.get("/contact", function(req, res) {
             res.sendFile(path.join(__dirname, "../public/contact.html"));
         });
+
+        //thanks route loads thankyou.html
+        app.get("/thanks", function(req, res) {
+            res.sendFile(path.join(__dirname, "../public/thankyou.html"));
+        });
         
     }

@@ -17,10 +17,10 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //connect to mongo BD
-mongoose.connect("mongodb://localhost/portfoliodb", { useNewUrlParser: true });
-//var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/portfolio" ;
+//mongoose.connect("mongodb://localhost/portfoliodb", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/portfoliodb" ;
 
-//mongoose.connect(MONGODB_URI);
+mongoose.connect(MONGODB_URI);
 
 
 //routes...code below

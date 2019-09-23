@@ -30,7 +30,7 @@ $("#submit").on("click", function(event) {
             $("#contact-box1").val("");
             $("#contact-box-2").val("");
 
-      
+            window.location.href = "/thanks";
 
         });
     }
