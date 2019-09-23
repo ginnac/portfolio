@@ -27,7 +27,7 @@ var CommentSchema = new Schema({
 });
 
 //create model from the above schema, using mongoose's model method
-var Contact = mongoose.model("Comment", CommentSchema);
+var Contact = mongoose.model("Contact", CommentSchema);
 
 // Export the Note model
 module.exports = Contact;

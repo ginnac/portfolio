@@ -2,19 +2,19 @@
 
     module.exports = function(app) {
 
-        // index route loads view.html
+        // index route loads index.html
         app.get("/", function(req, res) {
             res.sendFile(path.join(__dirname, "../public/index.html"));
         });
 
-        // cms route loads cms.html
+        // portfolio route loads portfolio.html
         app.get("/portfolio", function(req, res) {
             res.sendFile(path.join(__dirname, "../public/portfolio.html"));
         });
 
-        // blog route loads blog.html
+        // contact route loads contact.html
         app.get("/contact", function(req, res) {
-            res.sendFile(path.join(__dirname, "../public/blog.html"));
+            res.sendFile(path.join(__dirname, "../public/contact.html"));
         });
         
     }
